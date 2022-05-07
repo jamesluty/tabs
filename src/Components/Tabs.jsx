@@ -3,9 +3,10 @@ import styles from './styles.module.css'
 import {useState} from 'react'
 
 const Tabs = (props) => {
-    // const [content, setContent] = useState("")
-    const submit = (tab) => {
-        props.getContent(tab.tab.content)
+
+    const submit = (value) => {
+        props.getContent(value.tab.content)
+        console.log("inside app.js", value.tab.content)
     }
 
     return (
